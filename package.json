@@ -1,0 +1,22 @@
+{
+  "name": "cutoffman",
+  "version": "1.0.0",
+  "description": "cutoffman =========",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gits-14.sys.kth.se:A-Teens/cutoffman.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "jsonwebtoken": "^4.2.2",
+    "jws": "^3.0.0",
+    "koa": "^0.19.0",
+    "koa-router": "^4.3.2",
+    "thunkify": "^2.1.2"
+  }
+}

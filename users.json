@@ -1,0 +1,12 @@
+[{
+   "id": "ida",
+   "blocked": []
+},
+{
+   "id": "pelle",
+   "blocked": ["ida"]
+},
+{
+  "id": "caboose",
+  "blocked": []
+}]
