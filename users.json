@@ -1,12 +1,12 @@
 [{
    "id": "ida",
-   "blocked": []
+   "blocking": ["pelle"]
 },
 {
    "id": "pelle",
-   "blocked": ["ida"]
+   "blocking": ["ida"]
 },
 {
   "id": "caboose",
-  "blocked": []
+  "blocking": []
 }]

@@ -14,6 +14,16 @@ router.get('/users', function* () {
    };
 });
 
+router.get('/users/:userid', function*() {
+    var userid = this.params.userid;
+    var userJson = yield readFile('users.json');
+    var users = JSON.parse(userJson);
+    var me = users.filter(function(user) {
+       return user.id = userid;
+    })[0];
+    this.body = me || {};
+})
+
 router.post('/users/:userid/login', function* () {
     var userid = this.params.userid;
     var token = jws.sign({
