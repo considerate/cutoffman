@@ -1,12 +1,16 @@
 [{
    "id": "ida",
+   "name": "Ida",
    "blocking": ["pelle"]
 },
 {
    "id": "pelle",
+   "name": "Pelle Karlsson",
    "blocking": ["ida"]
 },
 {
   "id": "caboose",
+  "name": "Spartan Caboose",
   "blocking": []
 }]
+
