@@ -22,7 +22,7 @@ var FacebookStrategy = require('passport-facebook').Strategy;
 passport.use(new FacebookStrategy({
     clientID: facebookID,
     clientSecret: facebookSecret,
-    callbackURL: 'http://localhost:' + (process.env.PORT || 8888) + '/auth/facebook/callback'
+    callbackURL: 'http://localhost:8888/auth/facebook/callback'
   },
   function(token, tokenSecret, profile, done) {
       done(null, profile);
@@ -75,7 +75,7 @@ router.get('/users/:userid', function*() {
     } else {
         this.body = me;
     }
-});
+})
 
 function signUserToken(userid) {
     var expiery = new Date();
