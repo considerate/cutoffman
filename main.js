@@ -11,11 +11,8 @@ var jws = require('jws');
 var logger = require('koa-logger');
 var request = require('request');
 
-// body parser
 var bodyParser = require('koa-bodyparser');
 app.use(bodyParser());
-
-// Sessions
 var passport = require('koa-passport');
 
 
@@ -78,7 +75,7 @@ router.get('/users/:userid', function*() {
     } else {
         this.body = me;
     }
-})
+});
 
 function signUserToken(userid) {
     var expiery = new Date();
