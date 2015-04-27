@@ -1,6 +1,7 @@
 var koa = require('koa');
 var app = koa();
 var router = require('koa-router')();
+var cors = require('koa-cors');
 var fs = require('fs');
 var thunkify = require('thunkify');
 var readFile = thunkify(fs.readFile);
@@ -44,6 +45,7 @@ router.post('/users/:userid/login', function* () {
     };
 });
 
-
-app.use(logger()).use(router.routes());
+app.use(cors());
+app.use(logger());
+app.use(router.routes());
 app.listen(8888);
