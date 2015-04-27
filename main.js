@@ -3,6 +3,7 @@ var koa = require('koa');
 var app = koa();
 require('koa-qs')(app);
 var router = require('koa-router')();
+var cors = require('koa-cors');
 var fs = require('fs');
 var thunkify = require('thunkify');
 var readFile = thunkify(fs.readFile);
@@ -99,7 +100,9 @@ router.post('/users/:userid/login', function* () {
     };
 });
 
-
 app.use(passport.initialize());
-app.use(logger()).use(router.routes());
+app.use(cors());
+app.use(logger());
+app.use(router.routes());
+
 app.listen(8888);

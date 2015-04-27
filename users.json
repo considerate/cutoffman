@@ -32,5 +32,15 @@
   "id": "user4",
   "name": "User 4",
   "blocking": []
+},
+{
+  "id": "1234",
+  "name": "User 1234",
+  "blocking": []
+},
+{
+  "id": "1337",
+  "name": "User 1337",
+  "blocking": []
 }]
 
