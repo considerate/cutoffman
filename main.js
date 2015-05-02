@@ -58,6 +58,7 @@ router.get('/auth/facebook/callback',
 router.get('/users', function* () {
    var userJson = yield readFile('users.json');
    var users = JSON.parse(userJson);
+   this.set('Cache-Control', 'public, max-age=31557600');
    this.body = {
      users: users
    };
@@ -73,6 +74,7 @@ router.get('/users/:userid', function*() {
     if(!me) {
         this.throw(404);
     } else {
+        this.set('Cache-Control', 'public, max-age=31557600');
         this.body = me;
     }
 })
@@ -91,7 +93,16 @@ function signUserToken(userid) {
 
 router.post('/users/:userid/login', function* () {
     var userid = this.params.userid;
+    var userJson = yield readFile('users.json');
+    var users = JSON.parse(userJson);
+    var me = users.filter(function(user) {
+       return (user.id == userid);
+    })[0];
+    if(!me) {
+        this.throw(401);
+    }
     var token = signUserToken(userid);
+    this.set('Cache-Control', 'private, max-age=31557600');
     this.body = {
       token: token
     };

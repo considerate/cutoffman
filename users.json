@@ -42,5 +42,14 @@
   "id": "1337",
   "name": "User 1337",
   "blocking": []
+},
+{
+  "id": "viktor",
+  "name": "Viktor Erik Mikael Kronvall",
+  "blocking": [],
+  "pushTokens": {
+    "apns": "3b862b19cdce8750657b9e211585f74398e3c809ca223182a97fd97546038bfd"
+  }
 }]
+
 
