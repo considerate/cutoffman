@@ -109,7 +109,7 @@ router.post('/users/:userid/login', function* () {
 });
 
 app.use(passport.initialize());
-app.use(cors());
+app.use(cors({authorization: true}));
 app.use(logger());
 app.use(router.routes());
 
