@@ -1,6 +1,6 @@
 [{
    "id": "ida",
-   "name": "Ida",
+   "name": "Ida Svensson",
    "blocking": ["pelle"]
 },
 {
@@ -50,6 +50,9 @@
   "pushTokens": [{
     "type": "apns",
     "token": "3b862b19cdce8750657b9e211585f74398e3c809ca223182a97fd97546038bfd"
+  },{
+    "type": "gcm",
+    "token": "APA91bFqoThiL666Dum6TJQRWJ7bY3PUeE7OWCUNhQB7D8Mtw0UuR_S7snPNtE887yVoDJOI3cDT31NQHqyyviggu5a9KRMwvFI9nbczyryCno7oUDTLZALLLeQqGKzRIqRA5MTagw5-J1PbwKHacNDjBWD0dG_u5Q"
   }]
 }]
 
