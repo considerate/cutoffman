@@ -11,7 +11,7 @@
 {
   "id": "caboose",
   "name": "Spartan Caboose",
-  "blocking": []
+  "blocking": ["pelle"]
 },
 {
   "id": "user1",
@@ -31,6 +31,46 @@
 {
   "id": "user4",
   "name": "User 4",
+  "blocking": []
+},
+{
+  "id": "user5",
+  "name": "User 5",
+  "blocking": []
+},
+{
+  "id": "user6",
+  "name": "User 6",
+  "blocking": []
+},
+{
+  "id": "user7",
+  "name": "User 7",
+  "blocking": []
+},
+{
+  "id": "user8",
+  "name": "User 8",
+  "blocking": []
+},
+{
+  "id": "user9",
+  "name": "User 9",
+  "blocking": []
+},
+{
+  "id": "user10",
+  "name": "User 10",
+  "blocking": []
+},
+{
+  "id": "user11",
+  "name": "User 11",
+  "blocking": []
+},
+{
+  "id": "user12",
+  "name": "User 12",
   "blocking": []
 },
 {
