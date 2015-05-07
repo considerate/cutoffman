@@ -1,92 +1,110 @@
 [{
    "id": "ida",
    "name": "Ida Svensson",
-   "blocking": ["pelle"]
+   "blocking": ["pelle"],
+   "blockedBy": ["pelle"]
 },
 {
    "id": "pelle",
    "name": "Pelle Karlsson",
-   "blocking": ["ida"]
+   "blocking": ["ida"],
+   "blockedBy": ["ida"]
 },
 {
   "id": "caboose",
   "name": "Spartan Caboose",
-  "blocking": ["pelle"]
+  "blocking": ["pelle"],
+  "blockedBy": []
 },
 {
   "id": "user1",
   "name": "User 1",
-  "blocking": []
+  "blocking": [],
+  "blockedBy": []
 },
 {
   "id": "user2",
   "name": "User 2",
-  "blocking": []
+  "blocking": [],
+  "blockedBy": []
 },
 {
   "id": "user3",
   "name": "User 3",
-  "blocking": []
+  "blocking": [],
+  "blockedBy": []
 },
 {
   "id": "user4",
   "name": "User 4",
-  "blocking": []
+  "blocking": [],
+  "blockedBy": []
 },
 {
   "id": "user5",
   "name": "User 5",
-  "blocking": []
+  "blocking": [],
+  "blockedBy": []
 },
 {
   "id": "user6",
   "name": "User 6",
-  "blocking": []
+  "blocking": [],
+  "blockedBy": []
 },
 {
   "id": "user7",
   "name": "User 7",
-  "blocking": []
+  "blocking": [],
+  "blockedBy": []
 },
 {
   "id": "user8",
   "name": "User 8",
-  "blocking": []
+  "blocking": [],
+  "blockedBy": []
 },
 {
   "id": "user9",
   "name": "User 9",
-  "blocking": []
+  "blocking": [],
+  "blockedBy": []
 },
 {
   "id": "user10",
   "name": "User 10",
-  "blocking": []
+  "blocking": [],
+  "blockedBy": []
 },
 {
   "id": "user11",
   "name": "User 11",
-  "blocking": []
+  "blocking": [],
+  "blockedBy": []
 },
 {
   "id": "user12",
   "name": "User 12",
-  "blocking": []
+  "blocking": [],
+  "blockedBy": []
 },
 {
   "id": "1234",
   "name": "User 1234",
-  "blocking": []
+  "blocking": [],
+  "blockedBy": []
 },
 {
   "id": "1337",
   "name": "User 1337",
-  "blocking": []
+  "blocking": [],
+  "blockedBy": []
 },
 {
   "id": "viktor",
   "name": "Viktor Erik Mikael Kronvall",
   "blocking": [],
+  "blockedBy": [],
   "pushTokens": [{
     "type": "apns",
     "token": "3b862b19cdce8750657b9e211585f74398e3c809ca223182a97fd97546038bfd"
@@ -95,5 +113,3 @@
     "token": "APA91bFqoThiL666Dum6TJQRWJ7bY3PUeE7OWCUNhQB7D8Mtw0UuR_S7snPNtE887yVoDJOI3cDT31NQHqyyviggu5a9KRMwvFI9nbczyryCno7oUDTLZALLLeQqGKzRIqRA5MTagw5-J1PbwKHacNDjBWD0dG_u5Q"
   }]
 }]
-
-
