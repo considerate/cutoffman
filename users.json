@@ -8,7 +8,13 @@
    "id": "pelle",
    "name": "Pelle Karlsson",
    "blocking": ["ida"],
-   "blockedBy": ["ida", "caboose"]
+   "blockedBy": ["ragnar", "ida", "caboose"]
+},
+{
+  "id": "ragnar",
+  "name": "Ragnar Johansson",
+  "blocking": ["pelle"],
+  "blockedBy": []
 },
 {
   "id": "caboose",
