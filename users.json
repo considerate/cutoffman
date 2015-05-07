@@ -8,7 +8,7 @@
    "id": "pelle",
    "name": "Pelle Karlsson",
    "blocking": ["ida"],
-   "blockedBy": ["ida"]
+   "blockedBy": ["ida", "caboose"]
 },
 {
   "id": "caboose",
