@@ -116,7 +116,7 @@ router.post('/users/:userid/login', function* () {
 });
 
 app.use(passport.initialize());
-app.use(cors({authorization: true}));
+app.use(cors({authorization: true, credentials: true}));
 app.use(logger());
 app.use(router.routes());
 
