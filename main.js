@@ -66,6 +66,13 @@ router.get('/users', function* () {
 
 router.get('/users/:userid', function*() {
     var userid = this.params.userid;
+    if(userid.match(/user\d+/)) {
+        this.body = {
+            id: userid
+        }
+        this.set('Cache-Control', 'public, max-age=31557600');
+        return;
+    }
     var userJson = yield readFile('users.json');
     var users = JSON.parse(userJson);
     var me = users.filter(function(user) {
