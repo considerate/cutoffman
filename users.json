@@ -1,6 +1,7 @@
 [{
    "id": "ida",
    "name": "Ida Svensson",
+   "friends": ["ragnar", "viktor", "user1"],
    "blocking": ["pelle"],
    "blockedBy": ["pelle"]
 },
@@ -25,6 +26,7 @@
 {
   "id": "user1",
   "name": "User 1",
+  "friends": ["ida", "viktor"],
   "blocking": [],
   "blockedBy": []
 },
@@ -109,6 +111,7 @@
 {
   "id": "viktor",
   "name": "Viktor Erik Mikael Kronvall",
+  "friends": ["ida", "user1"],
   "blocking": [],
   "blockedBy": [],
   "pushTokens": [{
