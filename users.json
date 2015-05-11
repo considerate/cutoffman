@@ -1,4 +1,36 @@
 [{
+   "id": "haskell-sloth",
+   "name": "Haskell Sloth",
+   "friends": ["java-armadillo", "python-kitten", "erlang-pug"],
+   "blocking": [],
+   "blockedBy": [],
+   "picture": "http://i.imgur.com/uubfSMI.png?1"
+},
+{
+   "id": "python-kitten",
+   "name": "Pyton Kitten",
+   "friends": ["java-armadillo", "erlang-pug", "haskell-sloth"],
+   "blocking": [],
+   "blockedBy": [],
+   "picture": "http://i.imgur.com/uQ207cN.png?1"
+},
+{
+   "id": "java-armadillo",
+   "name": "Java Armadillo",
+   "friends": ["erlang-pug", "python-kitten", "haskell-sloth"],
+   "blocking": [],
+   "blockedBy": [],
+   "picture": "http://i.imgur.com/Bs4w5uU.png?1"
+},
+{
+   "id": "erlang-pug",
+   "name": "Erlang Pug",
+   "friends": ["java-armadillo", "python-kitten", "haskell-sloth"],
+   "blocking": [],
+   "blockedBy": [],
+   "picture": "http://i.imgur.com/KuNF1fI.png?1"
+},
+{
    "id": "ida",
    "name": "Ida Svensson",
    "friends": ["ragnar", "viktor", "user1"],
