@@ -10,7 +10,7 @@ var readFile = thunkify(fs.readFile);
 var jws = require('jws');
 var logger = require('koa-logger');
 var request = require('request');
-var localIp = '130.229.135.244';
+var localIp = '141.225.184.157';
 
 var bodyParser = require('koa-bodyparser');
 app.use(bodyParser());
