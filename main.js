@@ -10,6 +10,7 @@ var readFile = thunkify(fs.readFile);
 var jws = require('jws');
 var logger = require('koa-logger');
 var request = require('request');
+var localIp = '130.229.135.244';
 
 var bodyParser = require('koa-bodyparser');
 app.use(bodyParser());
@@ -22,7 +23,7 @@ var FacebookStrategy = require('passport-facebook').Strategy;
 passport.use(new FacebookStrategy({
     clientID: facebookID,
     clientSecret: facebookSecret,
-    callbackURL: 'http://localhost:8888/auth/facebook/callback'
+    callbackURL: 'http://'+ localIp+ ':8888/auth/facebook/callback'
   },
   function(token, tokenSecret, profile, done) {
       done(null, profile);
